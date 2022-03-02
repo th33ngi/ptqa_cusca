@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Automation Testing">
+	<listeners>
+		<listener class-name="cusca.listener.TestListener" />
+		<listener class-name="cusca.listener.ReportListener" />
+	</listeners>
+	<test name="Functional Testing">
+		<classes>
+			<class name="test.GooglePageTest" />
+			<class name="test.WikipediaPageTest" />
+			<class name="test.TutoralPageTest" />
+		</classes>
+	</test>
+</suite>
