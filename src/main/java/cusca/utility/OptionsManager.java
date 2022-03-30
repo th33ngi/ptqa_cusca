@@ -22,6 +22,7 @@ public class OptionsManager {
 			chromePrefs.put("profile.password_manager_enabled", false);
 			chromePrefs.put("plugins.always_open_pdf_externally", true);
 		chromeOptions.setExperimentalOption("prefs", chromePrefs);
+		chromeOptions.addArguments("--headless");
 		return chromeOptions;
 	}
 }
