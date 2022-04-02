@@ -11,7 +11,7 @@ public class Constants extends BasePage {
 	
 	//Config Properties
 	public static final String BROWSER_NAME = prop.getProperty("chrome");
-	public static final String CHROME_DRIVER = prop.getProperty("windrivers")+"/chromedriver";
+	public static final String CHROME_DRIVER = prop.getProperty("windrivers")+"/chromedriver.exe";
 	public static final String URL = prop.getProperty("appurl");
 	
 	public static final String GOOGLE_PAGE_TITLE = "Google";
