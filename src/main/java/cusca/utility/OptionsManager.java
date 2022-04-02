@@ -14,7 +14,7 @@ public class OptionsManager {
 	FirefoxProfile firefoxProf;
 	
 	public ChromeOptions getChromeOptions() {
-		chromeOptions = new ChromeOptions();
+		chromeOptions = new ChromeOptions().setHeadless(true);
 			HashMap <String, Object> chromePrefs = new HashMap <String, Object>();
 			chromeOptions.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
 			chromePrefs.put("profile.default_content_setting_values.notifications", 2);
@@ -22,7 +22,7 @@ public class OptionsManager {
 			chromePrefs.put("profile.password_manager_enabled", false);
 			chromePrefs.put("plugins.always_open_pdf_externally", true);
 		chromeOptions.setExperimentalOption("prefs", chromePrefs);
-		chromeOptions.addArguments("--headless");
+		//chromeOptions.addArguments("--headless");
 		return chromeOptions;
 	}
 }
