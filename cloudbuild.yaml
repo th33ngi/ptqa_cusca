@@ -1,3 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/mvn'
-  args: ['install']
+  args: ['install', '-Dmaven.test.skip=true']
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['-Dmaven.install.skip=true', 'test']
